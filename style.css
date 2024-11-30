@@ -51,6 +51,7 @@ li {
 
 .button-white {
   background-color: #fff;
+  display: block;
   padding: 4px 16px;
   border-radius: 32px;
   color: #000;
@@ -87,7 +88,7 @@ li {
   position: absolute;
   inset: 24px;
   border-radius: 20px;
-  background-color: #000000aa;
+  background-color: #00000020;
 }
 
 .hero-container {
@@ -98,7 +99,7 @@ li {
   transform: translateY(-50%);
   color: #fff;
   background-color: var(--accent-grey-50-opacity);
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(2px);
   border-radius: 16px;
 }
 
