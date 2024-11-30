@@ -33,6 +33,39 @@ li {
   list-style-type: none;
 }
 
+.nav-link {
+  color: #fff;
+}
+
+/* buttons */
+.button-green {
+  background-color: var(--mint-green);
+  padding: 4px 16px;
+  display: block;
+  color: var(--background-color);
+  border: 1px solid transparent;
+  border-radius: 32px;
+
+  transition: background-color 300ms ease, color 300ms ease, border 300ms ease;
+}
+
+.button-white {
+  background-color: #fff;
+  padding: 4px 16px;
+  border-radius: 32px;
+  color: #000;
+  border: 1px solid transparent;
+
+  transition: background-color 300ms ease, color 300ms ease, border 300ms ease;
+}
+
+.button-green:hover,
+.button-white:hover {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
 /* nav | hero */
 #home {
   position: relative;
@@ -54,7 +87,7 @@ li {
   position: absolute;
   inset: 24px;
   border-radius: 20px;
-  background-color: #00000080;
+  background-color: #000000aa;
 }
 
 .hero-container {
@@ -93,7 +126,8 @@ nav {
 
 .nav-container {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .nav-list {
@@ -102,13 +136,57 @@ nav {
   gap: 32px;
 }
 
-.nav-link {
-  color: #fff;
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 4px;
 }
 
-.contact-link {
-  background-color: #fff;
-  color: var(--background-color);
-  padding: 4px 16px;
+.logo-wrapper span {
+  color: #fff;
+  font-size: 12px;
+}
+
+.hero_btn-container {
+  margin-top: 32px;
+  display: flex;
+  gap: 16px;
+}
+
+.scroll_down {
+  position: absolute;
+  border: 1px solid #fff;
+  width: 16px;
+  height: 48px;
+  bottom: 56px;
+  left: 50%;
   border-radius: 32px;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.scroll_down:hover {
+  cursor: pointer;
+}
+
+.scroll_down:hover .dot {
+  background-color: var(--mint-green);
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  background-color: #fff;
+  border-radius: 20px;
+  animation: scroll 4s ease-in-out infinite;
+
+  transition: background-color 300ms ease;
+}
+
+@keyframes scroll {
+  0%, 100% {transform: translateY(-6px);}
+
+  50% {transform: translateY(-32px);}
 }
