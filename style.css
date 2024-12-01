@@ -5,6 +5,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Playfair Display", serif;
+  font-weight: 400;
   font-optical-sizing: auto;
 }
 
@@ -25,6 +26,10 @@ body {
   color: #E3D326;
 }
 
+h1,h2,h3,h4,p,a,span {
+  color: #fff;
+}
+
 a {
   text-decoration: none;
 }
@@ -35,6 +40,46 @@ li {
 
 .nav-link {
   color: #fff;
+}
+
+.line {
+  width: 95%;
+  height: 1px;
+  background-color: var(--white-50-opacity);
+  border-style: dotted;
+  margin: 0 auto;
+}
+
+.container {
+  padding: 4rem 0;
+}
+
+.row {
+  padding: 0 32px;
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.heading {
+  margin-bottom: 32px;
+}
+
+.heading-2 {
+  margin-bottom: 8px;
+}
+
+.sub-heading {
+  font-size: 14px;
+}
+
+.meaning {
+  margin-bottom: 16px;
+  color: #fff;
+}
+
+.italic {
+  font-style: italic;
 }
 
 /* buttons */
@@ -88,7 +133,7 @@ li {
   position: absolute;
   inset: 24px;
   border-radius: 20px;
-  background-color: #00000020;
+  background-color: #00000050;
 }
 
 .hero-container {
@@ -111,7 +156,7 @@ li {
 .hero_text {
   position: absolute;
   bottom: 100px;
-  left: 56px;
+  right: 56px;
   color: #fff;
   width: 250px;
   line-height: 2rem;
@@ -190,4 +235,62 @@ nav {
   0%, 100% {transform: translateY(-6px);}
 
   50% {transform: translateY(-32px);}
+}
+
+/* about */
+.type {
+  color: var(--white-50-opacity);
+  margin-bottom: 8px;
+}
+
+.about-text {
+  color: #fff;
+  line-height: 2rem;
+  margin-bottom: 16px;
+}
+
+.signature {
+  color: #fff;
+  margin-top: 56px;
+}
+
+#key_features {
+  margin-top: 10rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+  align-items: center;
+}
+
+.key_feature-container {
+  width: 500px;
+}
+
+.key_feature_dropdown-container {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.key_feature_dropdown {
+  border: 1px solid var(--white-50-opacity);
+  height: 50px;
+  border-radius: 8px;
+  padding: 0 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.feature_name {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.website-tab,
+.website-container {
+  width: 750px;
 }
