@@ -112,6 +112,26 @@ li {
   border: 1px solid #fff;
 }
 
+/* animations */
+@keyframes scroll {
+  0%, 100% {transform: translateY(-6px);}
+
+  50% {transform: translateY(-32px);}
+}
+
+@keyframes appear {
+  0% {
+    transform: translateX(0); 
+    opacity: 0
+  };
+  50% {
+    opacity: opacity 1;
+  }
+  100% {
+    transform: translateX(48px);
+  }
+}
+
 /* nav | hero */
 #home {
   position: relative;
@@ -231,12 +251,6 @@ nav {
   transition: background-color 300ms ease;
 }
 
-@keyframes scroll {
-  0%, 100% {transform: translateY(-6px);}
-
-  50% {transform: translateY(-32px);}
-}
-
 /* about */
 .type {
   color: var(--white-50-opacity);
@@ -293,4 +307,27 @@ nav {
 .website-tab,
 .website-container {
   width: 750px;
+}
+
+.website-container {
+  position: relative;
+}
+
+.website-text {
+  position: absolute;
+  top: 130px;
+  left: 0px;
+  font-size: 18px;
+
+  animation: appear 1.5s forwards;
+}
+
+.website-text--2 {
+  position: absolute;
+  top: 160px;
+  left: 0px;
+  width: 300px;
+  font-size: 12px;
+
+  animation: appear 2s forwards;
 }
