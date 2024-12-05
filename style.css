@@ -13,7 +13,7 @@
   --background-color: #2D2D2D;
   --white: #fff;
   --accent-grey: #454545;
-  --white-50-opacity: #ffffff50;
+  --white-50-opacity: #ffffff90;
   --accent-grey-50-opacity: #45454550;
   --mint-green: #A8D5BA;
 }
@@ -91,8 +91,16 @@ li {
 }
 
 .faint-color {
-  color: var(--white);
+  color: var(--white-50-opacity);
   font-size: 14px;
+}
+
+.center-type {
+  text-align: center;
+}
+
+.bold {
+  font-weight: 900;
 }
 
 /* buttons */
@@ -616,6 +624,10 @@ nav {
 
 .prices-container {
   margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
 }
 
 .price-box {
@@ -629,21 +641,22 @@ nav {
 
 .price-name {
   margin-bottom: 32px;
-  font-size: 48px;
+  font-size: 32px;
 }
 
 .price-type {
   font-size: 16px;
   color: var(--mint-green);
-  margin-bottom: 24px;
+  margin-bottom: 12px;
 }
 
 .price-list {
   margin-top: 16px;
+  margin-bottom: 32px;
   color: #fff;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 8px;
   font-size: 14px;
 }
 
@@ -672,4 +685,8 @@ nav {
   bottom: 20px;
   right: 50%;
   transform: translateX(50%);
+}
+
+.payment_policy {
+  margin-bottom: 32px;
 }
