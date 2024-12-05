@@ -45,7 +45,7 @@ li {
 .line {
   width: 95%;
   height: 1px;
-  border: 1px dotted #fff;
+  border: 1px dotted var(--white);
   margin: 0 auto;
 }
 
@@ -485,7 +485,7 @@ nav {
 
 /* services */
 #services {
-  padding-top: 8rem;
+  padding: 8rem;
 }
 
 .service-container {
@@ -496,6 +496,7 @@ nav {
 }
 
 .service-wrapper {
+  position: relative;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -510,6 +511,8 @@ nav {
   padding: 24px;
   background-color: var(--accent-grey-50-opacity);
   backdrop-filter: blur(2px);
+  border-radius: 16px;
+  z-index: 80;
 
   display: flex;
   flex-direction: column;
@@ -523,4 +526,85 @@ nav {
 .learn-more {
   align-self: flex-end;
   margin-top: 48px;
+}
+
+.rectangle-1,
+.rectangle-2,
+.rectangle-3,
+.rectangle-4,
+.rectangle-5 {
+  position: absolute;
+  z-index: 1;
+  animation: floating infinite linear;
+}
+
+.rectangle-1 {
+  top: 32px;
+  animation-duration: 10s;
+}
+
+.rectangle-2 {
+  top: 100px;
+  right: 200px;
+  animation-duration: 8s;
+}
+
+.rectangle-3 {
+  bottom: 100px;
+  left: 200px;
+  width: 100px;
+  transform: rotate(180deg);
+  animation-duration: 6s;
+}
+
+.rectangle-4 {
+  top: 200px;
+  left: 32px;
+  transform: rotate(90deg);
+  animation-duration: 4s;
+}
+
+.rectangle-5 {
+  bottom: 120px;
+  right: 120px;
+  transform: rotate(80deg);
+  animation-duration: 3s;
+}
+
+@keyframes floating {
+  0%, 100% {transform: translateY(0px);}
+  50% {transform: translateY(20px);}
+}
+
+/* past work */
+.past_work-sub-heading {
+  width: 680px;
+  margin: 0 auto;
+}
+
+.projects-container {
+  margin-top: 80px;
+  
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+}
+
+.project-wrapper {
+  width: 100%;
+}
+
+.project-img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.project_text-container {
+  margin-top: 16px;
+  display: flex;
+  gap: 32px;
+}
+
+.project_text {
+  font-size: 16px;
 }
