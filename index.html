@@ -491,9 +491,12 @@
     </div>
   </div>
 
+  <div class="container"></div>
+  <div class="container"></div>
+
   <section id="contact">
     <div class="container">
-      <div class="row">
+      <div class="row contact_row">
         <div class="contact-wrapper">
 
           <h2 class="contact-title">Lets work together!</h2>
@@ -523,6 +526,29 @@
             </a>
           </div>
         </div>
+
+        <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+
+          <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
+          <input type="hidden" name="subject" value="New Contact Form Submission from Web3Forms" />
+          <input type="hidden" name="from_name" value="My Website" />
+          <!-- More custom ization options available in the docs: https://docs.web3forms.com -->
+      
+          <div class="form-group-container">
+            <div class="form-group">
+              <input id="name" name="name" class="form-input" placeholder="Your name" type="text" />
+            </div>
+
+            <div class="form-group">
+              <input id="email" name="email" class="form-input" placeholder="Your email" type="email" />
+            </div>
+
+            <div class="form-group">
+              <textarea class="form-textarea" id="message" name="message" placeholder="Your message"></textarea>
+            </div>
+          </div>
+          <button class="form-submit" type="submit">Send Message</button>
+        </form>
       </div>
     </div>
   </section>
