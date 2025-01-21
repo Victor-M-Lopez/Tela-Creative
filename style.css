@@ -6,6 +6,14 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
 :root {
   --beige-color: #D5D8C7;
 }
@@ -14,14 +22,179 @@ body {
   background-color: var(--beige-color);
 }
 
-h1 {
+.container {
+  padding: 4rem 0;
+}
+
+.row {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 24px;
+}
+
+nav {
+  position: fixed;
+  top: 24px;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.nav_container {
+  padding: 0 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-line {
+  width: 1px;
+  height: 20px;
+  background-color: #00000075;
+}
+
+#home {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#home_title {
   font-weight: 400;
   font-size: 48px;
 }
 
-h2 {
+#home_sub-heading {
   font-size: 16px;
   font-weight: 400;
 }
 
+.home_btn {
+  padding: 8px 16px;
+  border-radius: 24px;
+}
 
+.contact_btn {
+  color: #fff;
+  background-color: #000;
+}
+
+.about_btn {
+  color: #000;
+  background-color: #fff;
+}
+
+.home_information-container {
+  position: absolute;
+  top: 25%;
+  left: 24px;
+  right: 24px;
+  text-align: center;
+  z-index: 90;
+}
+
+.home_btn-container {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.line {
+  width: 24px;
+  height: 1px;
+  background-color: #000;
+}
+
+.or-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.abstract-lines {
+  position: absolute;
+  z-index: 90;
+}
+
+.abstract-lines {
+  bottom: 120px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nav_list {
+  display: flex;
+  gap: 24px;
+}
+
+.nav_link a {
+  color: #000;
+}
+
+.green-gradient {
+  position: absolute;
+  bottom: 0;
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(to bottom, #D5D8C7 50%, #A8D5BA);
+  z-index: 20;
+}
+
+.slogan {
+  position: absolute;
+  bottom: 32px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.name {
+  font-size: 32px;
+}
+
+.company_letter {
+  margin-top: 24px;
+}
+
+.tela {
+  font-style: italic;
+}
+
+.heading {
+  font-size: 32px;
+  margin-bottom: 24px;
+}
+
+.company_saying {
+  width: 500px;
+}
+
+.sub-heading {
+  margin: 24px 0;
+  font-weight: 900;
+}
+
+.reason-text {
+  margin-left: 32px;
+}
+
+.reason {
+  font-weight: 900;
+}
+
+.reasons-container {
+  margin: 16px 0;
+  width: 100%;
+  max-width: 600px;
+  border: 1px solid red;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
